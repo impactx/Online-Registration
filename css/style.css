@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  margin: 0px;
+  padding: 25px 0px;
+  text-align: center;
+  color: white;
+}
+h2 {
+  margin: 15px auto;
+}
+p {
+  font-size: 1.3em;
+  margin: 10px 0px;
+  color: gray;
+}
+header {
+  background-color: rgb(18, 2, 104);
+}
+fieldset {
+  flex-direction: column;
+  border: none;
+}
+label,
+input,
+legend,
+select,
+textarea {
+  padding: 10px 0px;
+  text-indent: 5px;
+}
+
+legend {
+  border-top: black double 5px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+input,
+select,
+textarea {
+  background-color: rgb(211, 215, 241);
+  border-radius: 5px;
+  border: none;
+  color: rgb(153, 152, 152);
+  padding-right: 5px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(0, 15, 100);
+  transition: 0.5s;
+}
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+}
+label {
+  color: gray;
+}
+input,
+select,
+textarea {
+  color: rgb(22, 22, 22);
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 5px;
+  height: 60px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  font-size: 1.3em;
+}
+/* Layout Information */
+.wrapper {
+  width: 95%;
+  margin: auto;
+}
+.info {
+  margin: 10px auto 25px;
+  text-align: center;
+}
+.newsletter {
+  margin-top: 50px;
+  border-top: solid;
+  flex-direction: column;
+}
+.newsletter-div {
+  flex-direction: column;
+  margin-top: 10px;
+}
+.newsletter-div div input + label {
+  margin-left: 10px;
+}
+
+.zip {
+  width: 100px;
+}
+
+.col {
+  flex-direction: column;
+}
+
+/* DRY  */
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    max-width: 768px;
+  }
+  .col {
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+  #zipcode {
+    width: 30%;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  label,
+  input,
+  legend,
+  select,
+  textarea {
+    font-size: 1.3em;
+  }
+  .col label {
+    width: 30%;
+    font-size: 1.3em;
+  }
+  .col input,
+  .col select {
+    margin-left: auto;
+    width: 70%;
+    font-size: 1.3em;
+  }
+}
