@@ -4,8 +4,11 @@
     <title>Page Title</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -16,43 +19,63 @@
       <div class="wrapper">
         <div class="info">
           <h2>Signup for our newsletter</h2>
-          <p>Get the latest news on how your code is doing right in your  inbox.</p>
+          <p>
+            Get the latest news on how your code is doing right in your inbox.
+          </p>
         </div>
-        <form >
+        <form>
           <fieldset class="flex">
             <legend>Contact Information</legend>
 
             <div class="flex col">
               <label for="name">Full Name</label>
-              <input type="text" id="name"  placeholder="Required" name="name" required><br>
+              <input
+                type="text"
+                id="name"
+                placeholder="Required"
+                name="name"
+                required
+              /><br />
             </div>
-            
+
             <div class="flex col">
-              <label for="user_email" >Email Address</label>
-              <input type="email" id="user_email"  placeholder="Required" name="email" required><br>
+              <label for="user_email">Email Address</label>
+              <input
+                type="email"
+                id="user_email"
+                placeholder="Required"
+                name="email"
+                required
+              /><br />
             </div>
-            
+
             <div class="flex col">
               <label for="user_number">Phone Number</label>
-              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="user_number" name="number" placeholder="800-111-0000"><br>
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                id="user_number"
+                name="number"
+                placeholder="800-111-0000"
+              /><br />
             </div>
 
             <div class="flex col">
               <label for="user_city">City</label>
-              <input type="text" id="user_city" name="user_city"><br>
+              <input type="text" id="user_city" name="user_city" /><br />
             </div>
-            
+
             <div class="flex col">
               <label for="user_address">Street Address</label>
-              <input type="text" id="user_address" name="address"><br>
+              <input type="text" id="user_address" name="address" /><br />
             </div>
 
             <div class="flex col">
               <label for="user_state">State</label>
-              <select  name="state" id="user_state">
+              <select name="state" id="user_state">
                 <option value="none" selected disabled hidden>
                   Choose State
-              </option>
+                </option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -109,7 +132,7 @@
 
             <div class="flex col">
               <label for="zipcode">Zip Code</label>
-              <input type="number" id="zipcode"  name="zip">
+              <input type="number" id="zipcode" name="zip" />
             </div>
           </fieldset>
 
@@ -118,38 +141,41 @@
             <p>Select the newsletter you would like to recieve.</p>
             <div class="flex newsletter-div">
               <div>
-                <input type="checkbox" id="html" name="user_html">
-                <label for="html" >HTML News</label>
+                <input type="checkbox" id="html" name="user_html" />
+                <label for="html">HTML News</label>
               </div>
               <div>
-                <input type="checkbox" id="css" name="user_css">
+                <input type="checkbox" id="css" name="user_css" />
                 <label for="css">CSS News</label>
               </div>
               <div>
-                <input type="checkbox" id="js" name="user_js">
+                <input type="checkbox" id="js" name="user_js" />
                 <label for="js">Javascript News</label>
               </div>
 
               <p>Newsletter format</p>
               <div>
-                <input type="radio" name="letter" id="html_two"> 
+                <input type="radio" name="letter" id="html_two" />
                 <label for="html_two">HTML</label>
               </div>
               <div>
-                <input type="radio" name="letter" id="plain">
+                <input type="radio" name="letter" id="plain" />
                 <label for="plain">Plaint Text</label>
               </div>
 
               <label for="topic">Other topics you'd like to hear about</label>
-              <textarea id="topic" cols="30" rows="10" name="other_topics"></textarea>
+              <textarea
+                id="topic"
+                cols="30"
+                rows="10"
+                name="other_topics"
+              ></textarea>
             </div>
             <button>Sign Up</button>
           </fieldset>
         </form>
       </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>

@@ -107,6 +107,9 @@ button {
 .col {
   flex-direction: column;
 }
+#zipcode {
+  width: 50%;
+}
 
 /* DRY  */
 
